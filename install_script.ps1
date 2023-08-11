@@ -10,5 +10,5 @@ $rawUrl = "https://raw.githubusercontent.com/$repoOwner/$repoName/main/$filePath
 $destinationPath = "C:\Users\adminuser\Desktop"
 
 # Download the file from GitHub
-Invoke-WebRequest -Uri $rawUrl -OutFile $destinationPath
+Invoke-WebRequest -Uri $rawUrl -OutFile $destinationPath -UseBasicParsing
 
